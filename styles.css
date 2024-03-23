@@ -1,2 +1,43 @@
 
 /* Your CSS Code here. */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.flex {
+  width: 765px;
+  height: 430px;
+}
+
+.speed {
+  margin-top: 20px;
+  width: 200px;
+  height: 20px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.speed-bar {
+  height: 100%;
+  background: #ff6600;
+  border-radius: 5px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.2s;
+}
+
+.speed-bar.active {
+  background: #ff9900;
+}
